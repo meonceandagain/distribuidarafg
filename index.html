@@ -575,7 +575,7 @@ function finalizarCompra(){
   });
   if(total)msg+=`Total estimado: ${fmt(total)}%0A%0A`;
   msg+="Aguardo confirmación de precios, disponibilidad y condiciones. Gracias!";
-  window.open("https://wa.me/?text="+msg,"_blank");
+  window.open("https://wa.me/5491136626141?text="+msg,"_blank");
 }
 document.getElementById('srch').addEventListener('input',e=>{aS=e.target.value;renderGrid();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closePurchase();closeCartPanel();}});
