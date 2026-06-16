@@ -8,7 +8,7 @@ export default async function handler(req, context) {
   if(req.method==="OPTIONS") return new Response("",{status:204,headers});
   if(req.method!=="POST") return new Response(JSON.stringify({error:"Method not allowed"}),{status:405,headers});
   const token=(req.headers.get("Authorization")||"").replace("Bearer ","").trim();
-  const adminPwd=process.env.ADMIN_PASSWORD||"fg-dist-2024";
+  const adminPwd=process.env.ADMIN_PASSWORD||"admin123";
   if(token!==adminPwd) return new Response(JSON.stringify({error:"No autorizado"}),{status:401,headers});
   try {
     const body=await req.json();
