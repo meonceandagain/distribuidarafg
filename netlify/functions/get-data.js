@@ -26,7 +26,8 @@ const DEFAULT = {
   whatsapp: "5491136626141",
   grupos: [
     { id:"electronica", nombre:"Electrónica",        emoji:"⚡", color:"#2563EB" },
-    { id:"papeleria",   nombre:"Papelería Comercial", emoji:"📦", color:"#7C3AED" }
+    { id:"papeleria",   nombre:"Papelería",            emoji:"📦", color:"#7C3AED" },
+    { id:"libreria",    nombre:"Librería Comercial",   emoji:"📚", color:"#059669" }
   ],
   categorias: [
     { id:"cables",      nombre:"Cables",                 emoji:"🔌", color:"#2563EB", grupo:"electronica", activa:true },
@@ -42,7 +43,11 @@ const DEFAULT = {
     { id:"film",        nombre:"Film y Streech",           emoji:"🎞️", color:"#0E7490", grupo:"papeleria",  activa:true },
     { id:"papel",       nombre:"Papel y Cartón",           emoji:"📄", color:"#C47A20", grupo:"papeleria",  activa:true },
     { id:"higiene",     nombre:"Higiene y Limpieza",       emoji:"🧻", color:"#15803D", grupo:"papeleria",  activa:true },
-    { id:"guantes",     nombre:"Guantes Descartables",     emoji:"🧤", color:"#1D4ED8", grupo:"papeleria",  activa:true }
+    { id:"guantes",     nombre:"Guantes Descartables",     emoji:"🧤", color:"#1D4ED8", grupo:"papeleria",  activa:true },
+    { id:"resmas",      nombre:"Resmas",                       emoji:"📄", color:"#059669", grupo:"libreria",   activa:true },
+    { id:"cuadernos",   nombre:"Cuadernos",                    emoji:"📓", color:"#0D9488", grupo:"libreria",   activa:true },
+    { id:"lapiceras",   nombre:"Lapiceras y Útiles",           emoji:"✏️", color:"#7C3AED", grupo:"libreria",   activa:true },
+    { id:"carpetas",    nombre:"Carpetas y Archivos",          emoji:"📁", color:"#D97706", grupo:"libreria",   activa:true }
   ],
   productos: [
 
