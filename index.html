@@ -355,6 +355,7 @@ function buildGrupoStrip(){
   }
 
   const strip=document.getElementById('grupo-strip');
+  if(!strip) return;
   strip.innerHTML=`
     <button class="grupo-btn active" id="gb-all" onclick="selectGrupo('all')" style="border-color:var(--gl)">
       <span class="g-emoji">🏪</span>
